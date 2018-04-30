@@ -1,0 +1,28 @@
+<div class="customers view indent">
+    <div class="container">
+        <header>
+            <h3>
+                <span class="glyphicon glyphicon-user"></span>
+                {{ title }}
+            </h3>
+        </header>
+        <br />
+        <div class="row">
+            <div class="col-md-8">
+                <div class="navbar">
+                    <app-filter-textbox (changed)="filterChanged($event)"></app-filter-textbox>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-default" [routerLink]="['/customers', '0']">Add New Customer</a>
+            </div>
+        </div>
+    
+        <app-customers-grid [customers]="filteredCustomers"></app-customers-grid>
+
+        <app-pagination [totalItems]="totalRecords" 
+            [pageSize]="pageSize" 
+            (pageChanged)="pageChanged($event)"></app-pagination>
+          
+    </div>
+</div>
