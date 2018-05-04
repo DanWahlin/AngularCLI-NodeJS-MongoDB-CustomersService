@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
 //of this file to use it instead)
 import { HttpClient, HttpResponse, HttpErrorResponse } from '@angular/common/http';
 
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 import { ICustomer, IOrder, IState, IPagedResults, ICustomerResponse } from '../shared/interfaces';
