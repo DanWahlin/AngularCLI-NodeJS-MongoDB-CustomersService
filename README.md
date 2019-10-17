@@ -45,7 +45,7 @@ available on Pluralsight at https://www.pluralsight.com/courses/angular-nodejs-r
 
 ## Running the Application with Docker
 
-1. Install Node.js (8.10 or higher) and Docker for Mac/Windows or Docker Toolbox - https://www.docker.com/products/overview
+1. Install Node.js (10.16 or higher) and Docker for Mac/Windows or Docker Toolbox - https://www.docker.com/products/overview
 
 1. Open `config/config.development.json` and change the host from `localhost` to `mongodb`
 
