@@ -18,19 +18,19 @@ available on Pluralsight at https://www.pluralsight.com/courses/angular-nodejs-r
 
 ## Software Requirements To Run Locally (there's a Docker option below as well)
 
-* Node.js 8.10 or higher
+* Node.js 10.16 or higher
 * MongoDB 3.4 or higher
 
 ### Running the Application Locally
 
-1. Install Node.js (8.10 or higher) and MongoDB (3.4 or higher) on your dev box
+1. Install Node.js (10.16 or higher) and MongoDB (3.4 or higher) on your dev box
 
     * Node.js: https://nodejs.org
     * MongoDB: https://docs.mongodb.com/manual/administration/install-community
 
 1. Execute `mongod` to start the MongoDB daemon if it's not already running (read the installation instructions above if you are new to MongoDB or have issues running it)
 
-1. Run `npm install -g nodemon`
+1. Run `npm install -g @angular/cli nodemon` to install the Angular CLI and nodemon.
 
 1. Run `npm install` at the project root to install the app dependencies
 
