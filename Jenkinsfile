@@ -10,17 +10,6 @@ pipeline {
            
             }
         }
-        stage('Test') {
-            steps {
-                sh 'pws'
-                
-            }
-        }
-        stage('Deliver') {
-            steps {
-                 sh 'pws'
-                
-            }
-        }
+    
     }
 }
