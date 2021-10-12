@@ -16,13 +16,10 @@ node {
 
 
 node {
-   withCredentials([sshUserPrivateKey(credentialsId: 'ssh-sama', keyFileVariable: 'identity', passphraseVariable: '', usernameVariable: 'sama')]) {""
-			remote.user = sama
-			remote.identityFile = identity
-        stage("SSH CNX ") {
+  
+        stage("yarn install ") {
          
-          
+          sh'pwd'
            
         }
     }
-}
