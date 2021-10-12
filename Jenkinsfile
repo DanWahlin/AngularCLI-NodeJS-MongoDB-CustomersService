@@ -19,9 +19,17 @@ node {
   
         stage("yarn install ") {
          
- 
-           sh 'scp -P 1722 Jenkinsfile sama@63.33.196.224:/home/sama/ss.pu'
+          sh'docker-compose build'
+           
+        }
+    }
 
+
+node {
+  
+        stage("yarn install ") {
+         
+          sh'docker-compose up'
            
         }
     }
