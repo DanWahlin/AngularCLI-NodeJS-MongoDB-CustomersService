@@ -10,9 +10,10 @@ node {
 			remote.identityFile = identity
         stage("SSH Steps Rocks!") {
           
-            sh ' yarn install  '
-          sh'docker-compose build' 
-          sh'docker-compose up'
+          
+          
+            sh ' pwd '
+          
            
         }
     }
