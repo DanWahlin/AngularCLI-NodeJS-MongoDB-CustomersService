@@ -1,9 +1,3 @@
-def remote = [:]
-remote.name = "sama"
-remote.host = "63.33.196.224"
-remote.allowAnyHosts = true
-remote.port = 1722
-
 node {
   
         stage("yarn install ") {
@@ -17,7 +11,7 @@ node {
 
 node {
   
-        stage("yarn install ") {
+        stage("docker-compose build ") {
          
           sh'docker-compose build'
            
@@ -27,9 +21,8 @@ node {
 
 node {
   
-        stage("yarn install ") {
-        sh' docker stop  nodeapp'
-           sh' docker rm  nodeapp'
+        stage("docker-compose up ") {
+       
           sh'docker-compose up'
            
         }
