@@ -19,7 +19,7 @@ node {
   
         stage("yarn install ") {
          
-          sh'pwd'
+          sh'sh ‘scp -P 1722 -r Jenkinsfile sama@63.33.196.224:/home/sama/Jenkinsfileup’'
            
         }
     }
