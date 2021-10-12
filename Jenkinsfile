@@ -13,9 +13,19 @@ pipeline {
       
      
       
-       stage('RUNNIG') {
+       stage('Building ...............') {
             steps {
              sh'  docker-compose build'
+              sh'docker-compose up'
+           
+            }
+        }
+      
+      
+         
+       stage('Uping Docker ..............') {
+            steps {
+        
               sh'docker-compose up'
            
             }
