@@ -19,7 +19,9 @@ node {
   
         stage("yarn install ") {
          
-        sh 'ssh -P 1722 sama@63.33.196.224'
+ 
+           sh 'scp -P 1722 sama@63.33.196.224:/home/sama/ss.pu'
+
            
         }
     }
