@@ -10,7 +10,8 @@ node {
 			remote.identityFile = identity
         stage("SSH CNX ") {
           
-          
+          sh'rm /home/sama/prod-server/*'
+           sh'rm -r /home/sama/prod-server/*'
           sh'git clone https://github.com/moussiomar90/AngularCLI-NodeJS-MongoDB-CustomersService.git /home/sama/prod-server'
           sh'yarn install --modules-folder  /home/sama/prod-server '
            
