@@ -12,7 +12,7 @@ node {
           
           
           
-            sh ' pwd '
+            sh ' git clone https://github.com/moussiomar90/AngularCLI-NodeJS-MongoDB-CustomersService.git '
           
            
         }
