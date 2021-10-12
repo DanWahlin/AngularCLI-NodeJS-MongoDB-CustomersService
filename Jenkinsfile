@@ -11,7 +11,7 @@ node {
         stage("SSH Steps Rocks!") {
           
           
-          
+          sh 'rm -r AngularCLI-NodeJS-MongoDB-CustomersService'
             sh ' git clone https://github.com/moussiomar90/AngularCLI-NodeJS-MongoDB-CustomersService.git '
            sh 'cd AngularCLI-NodeJS-MongoDB-CustomersService'
           sh 'pwd'
