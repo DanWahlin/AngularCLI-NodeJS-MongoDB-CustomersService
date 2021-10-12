@@ -14,7 +14,14 @@ pipeline {
         }
       
      
-
+stages {
+        stage('TESTING') {
+            steps {
+                sh 'docker-compose build'
+           
+            }
+        }
+      
       
     }
     
