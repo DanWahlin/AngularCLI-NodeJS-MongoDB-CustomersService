@@ -9,18 +9,12 @@ pipeline {
         stage('TESTING') {
             steps {
                 sh 'yarn install'
-           
+             sh 'docker-compose build'
             }
         }
       
      
-stages {
-        stage('TESTING') {
-            steps {
-                sh 'docker-compose build'
-           
-            }
-        }
+
       
       
     }
