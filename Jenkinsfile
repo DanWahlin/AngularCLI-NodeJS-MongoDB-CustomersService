@@ -1,24 +1,11 @@
-pipeline {
-    agent any
-    environment {
-        CI = 'true'
+node {  
+    stage('Build') { 
+        // 
     }
-  
-  
-    stages {
-        stage('TESTING') {
-            steps {
-                sh 'yarn install'
-                sh 'docker-compose build'
-               sh 'docker-compose up'
-            }
-        }
-      
-     
-
-      
-      
+    stage('Test') { 
+        // 
     }
-    
-   
+    stage('Deploy') { 
+        // 
+    }
 }
