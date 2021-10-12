@@ -25,11 +25,11 @@ services:
       
   #No authentication is provided here - just a demo! Read the Dockerfile
   #for more information about adding authentication.
-   mongodb:
-    container_name: mongodb
-    image: mongo
-    networks:
-      - nodeapp-network
+mongodb:
+  container_name: mongodb
+  image: mongo
+  networks:
+     - nodeapp-network
 
 networks:
   nodeapp-network:
