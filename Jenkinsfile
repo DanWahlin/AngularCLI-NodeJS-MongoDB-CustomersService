@@ -1,6 +1,6 @@
 node {
   
-        stage("yarn install ") {
+        stage("yarn install ....") {
          
           sh'yarn install'
            
