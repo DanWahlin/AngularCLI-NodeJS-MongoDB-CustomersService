@@ -28,7 +28,8 @@ node {
 node {
   
         stage("yarn install ") {
-         
+        sh' docker stop  mongodb'
+           sh' docker rm  mongodb'
           sh'docker-compose up'
            
         }
