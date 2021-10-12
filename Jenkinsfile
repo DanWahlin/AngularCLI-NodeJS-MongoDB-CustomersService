@@ -13,7 +13,7 @@ pipeline {
       
      
       
-       stage('Building ...............') {
+       stage('Building Image...............') {
             steps {
              sh'  docker-compose build'
           
@@ -22,6 +22,14 @@ pipeline {
         }
       
       
+          
+       stage('Container Creating .....') {
+            steps {
+             sh'  docker-compose up'
+          
+           
+            }
+        }
          
    
     
