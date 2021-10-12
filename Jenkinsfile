@@ -1,10 +1,12 @@
+def remote = [:]
+remote.name = "sama"
+remote.host = "63.33.196.224"
+remote.allowAnyHosts = true
+remote.port = 1722
+
+
 pipeline {
-    agent {
-        docker {
-            image 'node:14-alpine'
-            args '-p 8000:3000'
-        }
-    }
+    agent any
     environment {
         CI = 'true'
     }
