@@ -23,13 +23,7 @@ pipeline {
       
       
          
-       stage('Uping Docker ..............') {
-            steps {
-        
-              sh'docker-compose up'
-           
-            }
-        }
+   
     
     }
 }
