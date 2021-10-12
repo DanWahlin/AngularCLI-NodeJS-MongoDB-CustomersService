@@ -1,11 +1,31 @@
-node {  
-    stage('Build') { 
-       sh' yarn  install'
+pipeline {
+    agent {
+        docker {
+            image 'node:14-alpine'
+            args '-p 8000:3000'
+        }
     }
-    stage('Test') { 
-        sh'docker-compose build'
+    environment {
+        CI = 'true'
     }
-    stage('Deploy') { 
-        sh'docker-compose up' 
+    stages {
+        stage('Build') {
+            steps {
+                sh 'yarn install'
+           
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'docker-compose build'
+               
+            }
+        }
+        stage('Deliver') {
+            steps {
+                sh 'docker-compose up'
+                
+            }
+        }
     }
 }
