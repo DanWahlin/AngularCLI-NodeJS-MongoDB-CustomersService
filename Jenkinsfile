@@ -12,20 +12,10 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'yarn install'
+               sh' apt install curl'
            
             }
         }
-        stage('Test') {
-            steps {
-                sh 'docker-compose build'
-               
-            }
-        }
-        stage('Deliver') {
-            steps {
-                sh 'docker-compose up'
-                
-            }
-        }
+     
     }
 }
