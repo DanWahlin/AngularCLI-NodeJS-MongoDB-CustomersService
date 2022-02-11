@@ -1544,7 +1544,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_2__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/danwahlin/Dropbox/Projects/GitHub/Angular-CLI-NodeJS-MongoDB-CustomersService/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /Users/danwahlin/Dropbox/Projects/GitHub/AngularCLI-NodeJS-MongoDB-CustomersService/src/main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -338,7 +338,7 @@ if (content.locals) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/danwahlin/Dropbox/Projects/GitHub/Angular-CLI-NodeJS-MongoDB-CustomersService/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /Users/danwahlin/Dropbox/Projects/GitHub/AngularCLI-NodeJS-MongoDB-CustomersService/src/styles.css */"./src/styles.css");
 
 
 /***/ })
