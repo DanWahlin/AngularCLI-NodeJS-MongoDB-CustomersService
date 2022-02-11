@@ -29,7 +29,7 @@
     "csurf": "^1.10.0",
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
+    "express-handlebars": "^5.3.1",
     "handlebars": "^4.7.7",
     "handlebars-helpers": "^0.10.0",
     "handlebars-layouts": "^3.1.4",
